@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple, semantic, and accessible HTML5 webpage demonstrating SEO-friendly structure.">
+  <title>My First Semantic HTML5 Web Page</title>
+</head>
+<body>
+  <!-- Accessible Landmark: Site Header -->
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>A demonstration of semantic HTML5, accessibility, and SEO basics.</p>
+    
+    <!-- Accessible Landmark: Navigation -->
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about" title="Learn more about this page">About</a></li>
+        <li><a href="#articles" title="Read my articles">Articles</a></li>
+        <li><a href="#contact" title="Get in touch with me">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Accessible Landmark: Main Content -->
+  <main id="main-content">
+    <!-- Section 1 -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>
+        This webpage was created to practice modern HTML5 structure while
+        applying accessibility and SEO principles. It is fully semantic and
+        uses landmarks to support screen readers.
+      </p>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Articles</h2>
+      <article>
+        <header>
+          <h3>Why Semantic HTML Matters</h3>
+          <p><time datetime="2025-08-27">August 27, 2025</time></p>
+        </header>
+        <p>
+          Semantic HTML5 elements, such as <code>&lt;header&gt;</code>,
+          <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>, help
+          search engines and assistive technologies understand the structure
+          of a page. This improves both accessibility and SEO.
+        </p>
+      </article>
+
+      <article>
+        <header>
+          <h3>Accessibility First Approach</h3>
+          <p><time datetime="2025-08-20">August 20, 2025</time></p>
+        </header>
+        <p>
+          Designing with accessibility in mind ensures that everyone,
+          including users with disabilities, can navigate and enjoy your
+          content. Features like <code>aria-label</code> and heading hierarchy
+          support this goal.
+        </p>
+      </article>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>
+        Have feedback? You can reach me at
+        <a href="mailto:example@email.com">example@email.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Accessible Landmark: Footer -->
+  <footer>
+    <p>&copy; 2025 My Semantic Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
